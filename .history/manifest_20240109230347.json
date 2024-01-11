@@ -1,0 +1,49 @@
+{
+    "manifest_version": 3,
+    "name": "Dislexy Reader",
+    "version": "0.10",
+    "description" : "A basic example extension with only required keys",
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "browser_action": {
+        "default_popup" : "popup.html",
+        "default_icon" : {
+        "16": "Image/eye-care_16.png",
+        "24": "Image/eye-care_24.png",
+        "32": "Image/eye-care_32.png",
+        "128": "Image/eye-care_128.png"
+        }
+        
+    }, 
+    "content_scripts": [
+        {
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+        }
+    ],
+    
+    "commands" : {
+        "_execute_browser_action" : {
+            "suggested_key" : {
+                "default" : "Ctrl + Shift + F",
+                "mac" : "MacCtrl + Shift + F"
+            }
+        }
+
+    },
+    "background.service_worker" : {
+        "scripts" : ["background.js"],
+        "persistent" : false
+    },
+    "icons": {
+    "16": "Image/eye-care_16.png",
+    "24": "Image/eye-care_24.png",
+    "32": "Image/eye-care_32.png",
+    "128": "Image/eye-care_128.png"
+    }
+    
+    }
+

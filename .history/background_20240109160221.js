@@ -1,0 +1,1 @@
+chrome.browserAction.setBadgeText({ Text: 'ON'})

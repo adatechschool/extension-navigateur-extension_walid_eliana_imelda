@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Dislexy Reader",
+    "version": "0.10",
+    "description" : "A basic example extension with only required keys",
+    "browser_action": {
+        "16": "Image/eye-care_16.png",
+        "24": "Image/eye-care_24.png",
+        "32": "Image/eye-care_32.png"
+    },
+    "icons": {
+    "16": "Image/eye-care_16.png",
+    "24": "Image/eye-care_24.png",
+    "32": "Image/eye-care_32.png"
+    }
+    }
+

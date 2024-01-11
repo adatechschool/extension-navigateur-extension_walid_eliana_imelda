@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Dislexy Reader",
+    "version": "0.10",
+    "description" : "A basic example extension with only required keys",
+    "browser_action": {
+        "16": "Image/shared-vision_16.png",
+        "24": "Image/shared-vision_24.png",
+        "32": "Image/shared-vision_32.png"
+    },
+    
+    "icons": {
+    "16": "Image/shared-vision_16.png",
+    "24": "Image/shared-vision_24.png",
+    "32": "Image/shared-vision_32.png"
+    
+    }
+    
+    }
+
