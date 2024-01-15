@@ -1,22 +1,22 @@
 {
     "manifest_version": 3,
-    "name": "Monospace Font Replacer",
+    "name": "Font Replacer",
     "version": "1.0",
-    "description": "Replace font family with 'monospace' on a website",
+    "description": "Replace font on any website with 'Montserrat'",
     "icons": {
-      "48": "images/glasses-32.png"
+      "48": "Images/glasses-32.png"
     },
     "permissions": [
       "activeTab"
     ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "Images/glasses-32.png"
+    },
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
         "js": ["content.js"]
       }
-    ],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "images/glasses-128.png"
-    }
+    ]
   }

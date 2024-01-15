@@ -1,11 +1,21 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if (request.action === 'replaceFontFamily') {
-      replaceFontFamily(request.newFontFamily);
+  if (request.action === 'applyChanges') {
+    applyChanges(request.selectedFontFamily);
+  }
+});
+
+function applyChanges(selectedFontFamily) {
+  const elements = document.querySelectorAll('*');
+
+  elements.forEach(element => {
+    element.style.fontFamily = selectedFontFamily;
+
+    const textContent = element.textContent;
+    if (textContent) {
+      const newTextContent = textContent.replace(/[szbp]/gi, match => {
+        return `<span style="font-weight: bold;">${match}</span>`;
+      });
+      element.innerHTML = newTextContent;
     }
   });
-  
-  function replaceFontFamily(newFontFamily) {
-    document.querySelectorAll('*').forEach(element => {
-      element.style.fontFamily = newFontFamily;
-    });
-  }
+}
