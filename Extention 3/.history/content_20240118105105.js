@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 function applyChanges(selectedFontFamily) {
   var OpenDyslexic  = document.createElement ("style");
 OpenDyslexic.type       = "text/css";
-styleNode.textContent   = "@font-face { font-family:OpenDyslexy; src: url('"
+styleNode.textContent   = "@font-face { font-family:OpenDyslexic; src: url('"
  + chrome.extension.getURL ("OpenDyslexic-regular.otf")
  + "'); }"
 ;
