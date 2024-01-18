@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Font Replacer",
+    "version": "1.0",
+    "description": "Replace font on any website with 'Montserrat'",
+    "icons": {
+      "48": "Image/glasses-32.png"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "Image/glasses-32.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }

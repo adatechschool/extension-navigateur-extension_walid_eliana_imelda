@@ -1,0 +1,39 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <script type="module" src="popup.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+    <h1> Dislecxic Reader </h1>
+  <label for="font-family">Select Font Family:</label>
+
+  <select id="font-family">
+
+    <option value= "Montserrat:wght@400;">Dislecxic Font</option>
+
+    <option value="Arial"> Lettres en Gras</option>
+
+    <option value="Rockwell"> Le deux</option>
+    <!-- Add more font options as needed -->
+  </select>
+
+  <label for="bold-letters">Select Bold Letters:</label>
+  <select id="bold-letters" multiple>
+    <option value="s">s</option>
+    <option value="z">z</option>
+    <option value="p">p</option>
+    <option value="b">b</option>
+  </select>
+
+
+  <button id="apply-button">Apply Changes</button>
+</body>
+</html>

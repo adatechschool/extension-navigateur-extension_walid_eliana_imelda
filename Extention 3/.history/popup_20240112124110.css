@@ -1,0 +1,29 @@
+html,
+body
+{
+    display: flexbox;
+    flex-direction: row;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select, button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
