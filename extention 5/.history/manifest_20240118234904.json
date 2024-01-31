@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Font Replacer",
+    "version": "1.0",
+    "description": "Replace font with labels",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "Images/glasses-16.png",
+        "48": "Images/glasses-32.png",
+        "128": "Images/glasses-128.png"
+      }
+    },
+    "icons": {
+      "16": "Images/glasses-16.png",
+      "48": "Images/glasses-32.png",
+      "128": "Images/glasses-128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }

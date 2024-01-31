@@ -1,8 +1,0 @@
-html,
-body {
-    display: flexbox;
-    flex-direction: row;
-    justify-content: center;
-    align-items: row;
-    background: rgb(0, 0, 0);
-}
